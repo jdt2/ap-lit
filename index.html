@@ -6,25 +6,82 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 <meta name="viewport" content="width = 1050, user-scalable = no" />
+<title>Multi-Genre Project</title>
 <script type="text/javascript" src="turnjs4/extras/jquery.min.1.7.js"></script>
 <script type="text/javascript" src="turnjs4/extras/modernizr.2.5.3.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css" >
 </head>
 <body>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+<div class="container">
+    <a class="navbar-brand" href="#">Multi-Genre Project</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+        <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="usage.html">How to Use</a>
+        </li>
+    </ul>
+    </div>
+</div>
+</nav>
 
-<div class="flipbook-viewport">
-	<div class="container">
-		<div class="flipbook">
-            <div style="background-image:url(rightPage.jpg)">
-                Something
-            </div>
-			<div style="background-image:url(rightPage.jpg)"></div>
-			<div style="background-image:url(rightPage.jpg)"></div>
-			<div style="background-image:url(rightPage.jpg)"></div>
-			<div style="background-image:url(rightPage.jpg)"></div>
-		</div>
-	</div>
+<!-- Page Content-->
+<div class="container">
+<div class="row">
+    <div class="col text-center">
+    <h1 class="mt-4 fade-fast">Paul D's Diary</h1>
+    <p class="lead fade-slow">Restored by historian Jesse Du</p>
+    </div>
+</div>
 </div>
 
+<div class="flipbook-viewport">
+    <div class="container">
+
+    <div class="flipbook">
+        <div class='page'>
+            <p class="text lead">
+                Entry 1<br>
+                The Journey to 124<br><br>
+                Sweet Home fell into shambles once the schoolteacher came. That man made Sethe jump ship, drove Halle crazy, and many more unimaginable things. I still remember the rope tugging on my neck as the buckboard collided with every tiny pebble or rock on the beaten path. I couldn’t even imagine a person worse than schoolteacher, but Brandywine sought to defy the odds. I was so close to relieving every slave under him with the dull blade of a knife, but God told me it wasn’t so. Thereby, to the chain gangs I went, and after the turmoil of barely escaping with the hairs on our backs, I was finally free. Following the blooming blossoms eventually brought me to 124, and my story continues.
+
+            </p>
+        </div>
+        <div class='page'>
+            <p class='text lead'>
+                Entry 2<br>
+                First Days with Sethe<br><br>
+                The sun swelters those who dare to venture under it during this fateful day. I’ve been doing it for quite a while, and the heat is nowhere near as terrible as what I had left. As I ask around for directions, I hear about a house: 124 Bluestone Rd. “It’s haunted,” they say, but that’s no deterrent to me. If that’s where Sethe resides, then so be it. As the sweat glistens down my cheeks, I finally reach the gray and white house. The porch welcomes me as I take a seat. Hours that seemed like minutes passed, and I caught my first glimpse of Sethe in eighteen years. That haunted deal was no match for me when I entered the house, and I was finally able to experience love again after eighteen grueling years.
+            </p>
+        </div>
+        <div class='page'>
+            <p class='text lead'>
+                Entry 3<br>
+                The Carnival<br><br>
+                What am I doing wrong? For the first time in my life, I’m experiencing happiness and so is Sethe. The ghost that reminds Sethe and Denver of the past has been rid of, and Sethe and I may start thinking of the future soon. All the things we could experience together in Cincinnati without the glaring eye of slaveowners to determine the course of our futures. Despite all this, Denver doesn’t seem to agree with my sentiment. To her, things have gotten worse since the ghost left, and all she has for me is contempt. Like a good father, I think it’s time I start connecting with Denver more. Who doesn’t like the carnival? Why can’t we start our futures now by enjoying our opportunities? After some convincing and dressing up, we went to the carnival and had a blast… that was until we came home however.
+            </p>
+        </div>
+        <div class='page'>
+            <p class="text lead">
+            Entry 3<br>
+            Beloved<br><br>
+            Beloved. What have I done? Not to the literal Beloved, but to my beloved. Beloved was suspicious at first: I mean what kind of person would just show up on a doorstep like that (hey, don’t look at me). How does she know so much about Sethe, and why haven’t I known any of this either? Denver and Sethe love her though, so I was best to keep my mouth shut even with the crazy things she’s doing. That strategy went downhill quickly though. The way she shined… there was something in me that I couldn’t control. I felt like I was back at Sweet Home again when I realized what I had done: powerless and out of control. What am I to do with Sethe? What am I to do once she finds out?
+            </p>
+        </div>
+    </div>
+</div>
+</div>
 
 <script type="text/javascript">
 
@@ -54,6 +111,11 @@ function loadApp() {
 			autoCenter: true
 
 	});
+    $('.flipbook').hide(0).delay(1000).fadeIn(5000)
+    //$('.page').hide(0).delay(1500).fadeIn(3000)
+
+    $(".fade-fast").hide(0).delay(500).fadeIn(2000)
+    $(".fade-slow").hide(0).delay(700).fadeIn(3000)
 }
 
 // Load the HTML4 version if there's not CSS transform

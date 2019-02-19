@@ -1,0 +1,31 @@
+body {
+    /* font-size: 18px;
+    font-family: 'Times New Roman'; */
+    background-image: url("dynamic-style/dynamic-style.png");
+}
+
+.header {
+    text-align: center;
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+.flipbook {
+    margin-top: 8%;
+    font-size: 18px;
+    font-family: 'Apple Chancery';
+}
+
+.text {
+    margin: 20px;
+}
+
+.navbar {
+    height: 40px;
+}
+
+.page {
+    background-image: url("pageBackground.jpg");
+}
